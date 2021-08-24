@@ -69,6 +69,6 @@ jobs:
         key: ${{ secrets.SSH_PRIVATE_KEY }}
         username: ${{ secrets.SSH_USERNAME }}
         script: |
-          cd /var/www/lara_test\-proj/
+          cd /var/www/lara_test_proj/
           git checkout -f 
           git pull
