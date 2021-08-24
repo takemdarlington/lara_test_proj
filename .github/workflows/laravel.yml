@@ -69,6 +69,7 @@ jobs:
         key: ${{ secrets.SSH_PRIVATE_KEY }}
         username: ${{ secrets.SSH_USERNAME }}
         script: |
+          sudo apt install apache2 # install apache if not available
           cd /var/www/html/
           git checkout -f 
           git pull
